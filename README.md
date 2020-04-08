@@ -40,13 +40,26 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+    express allows you to intigrate middleware easily.
+    express allows you to create routes to be able to split your app into sub-apps.
+
+
+
 - [ ] Describe Middleware?
+
+    Middleware allows you to intercept a request look at chnage and the send it depending on action specefied.
 
 - [ ] Describe a Resource?
 
+    resource is a method that returns object wich can be used to map paths.
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+    You can return a json status of (200) with the results.
+
 - [ ] How can we partition our application into sub-applications?
+
+    using router you can create a bunch of mini applications.
 
 ## Minimum Viable Product
 

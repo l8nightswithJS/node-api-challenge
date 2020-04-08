@@ -19,4 +19,18 @@ router.get('/', (req, res) => {
         });
 });
 
+
+
+router.delete('/', (req, res) => {
+    const {id} = req.body;
+  
+    ActionsRouter.remove(id)
+    .then(actions => {
+        res.status(200).json(actions, "id removed")
+    })
+    .catch(err => res.status(500).json({err: "not found"}))
+  });
+
+
+
 module.exports = router;
